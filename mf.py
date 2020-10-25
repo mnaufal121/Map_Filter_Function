@@ -20,7 +20,6 @@ def morthan1(x):
     if x > 7:
         morthan2.append(x)
 
-
 for enum in enums:
     cubic1(enum)
     morthan1(enum)
