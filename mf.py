@@ -8,14 +8,22 @@ print(cubic)
 print(morthan)
 
 # penerapan yang tidak memakai map & filter function 
-cubic1 = []
-morthan1 = []
+
+cubic2 = []
+morthan2 = []
+
+def cubic1(x):
+    res = x*x*x
+    cubic2.append(res)
+
+def morthan1(x):
+    if x > 7:
+        morthan2.append(x)
+
 
 for enum in enums:
-    x = enum*enum*enum
-    cubic1.append(x)
-    if enum > 70:
-        morthan1.append(enum)
+    cubic1(enum)
+    morthan1(enum)
 
-print(cubic1)
-print(morthan1)
+print(cubic2)
+print(morthan2)
